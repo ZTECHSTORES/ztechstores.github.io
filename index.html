@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +11,39 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
         .container {
             text-align: center;
             background: white;
             padding: 40px;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
         }
         .logo {
             width: 150px;
-            height: 150px;
+            height: auto;
             margin: 0 auto 20px;
+            display: block;
         }
         h1 {
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: bold;
         }
         p {
             color: #666;
             margin-bottom: 30px;
+            font-size: 18px;
         }
         .btn {
             display: inline-block;
@@ -44,8 +51,10 @@
             background: #667eea;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             transition: background 0.3s;
+            font-weight: bold;
+            width: 100%;
         }
         .btn:hover {
             background: #764ba2;
@@ -54,11 +63,14 @@
 </head>
 <body>
     <div class="container">
+        <!-- تأكدي إن صورة اللوجو اسمها image.jpg -->
         <img src="image.jpg" alt="Z TECH Logo" class="logo">
-        <h1>مرحباً بك في Z TECH Store</h1>
-        <p>متجرك الموثوق للتكنولوجيا والأجهزة</p>
+        
+        <h1>مرحباً بكم في Z TECH</h1>
+        <p>"انتظرونا قريبا .."</p>
+        
         <a href="https://www.facebook.com/ZTECHSTORE2" target="_blank" class="btn">
-            انضم لصفحتنا على الفيسبوك
+            انضم الآن لصفحتنا على الفيسبوك
         </a>
     </div>
 </body>
